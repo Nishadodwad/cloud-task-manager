@@ -1,5 +1,6 @@
-const AUTH = "http://localhost:5001";
-const TASK = "http://localhost:5002";
+const AUTH = "https://cloud-task-manager-476h.onrender.com/";
+const TASK = "https://cloud-task-manager-1.onrender.com/";
+
 
 // -------- REGISTER ----------
 function register() {
