@@ -1,0 +1,11 @@
+{
+  "name": "cloud-task-manager",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm start --prefix auth-service\" \"npm start --prefix task-service\" \"npm start --prefix frontend-server\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
