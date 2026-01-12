@@ -1,5 +1,5 @@
-const AUTH = "https://cloud-task-manager-476h.onrender.com/";
-const TASK = "https://cloud-task-manager-1.onrender.com/";
+const AUTH = "https://cloud-task-manager-476h.onrender.com";
+const TASK = "https://cloud-task-manager-1.onrender.com";
 
 
 // -------- REGISTER ----------
