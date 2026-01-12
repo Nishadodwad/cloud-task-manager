@@ -18,8 +18,13 @@ function register() {
       if (data.message === "Registration successful") {
         window.location.href = "/login.html";
       }
+    })
+    .catch(err => {
+      console.error("Register error:", err);
+      alert("Registration failed");
     });
 }
+
 
 // -------- LOGIN ----------
 function login() {
@@ -33,12 +38,16 @@ function login() {
   })
     .then(res => res.json())
     .then(data => {
-      if (data.success === true) {
+      if (data.success) {
         localStorage.setItem("user", data.username);
-        window.location.href = "/tasks.html";   // 🔴 IMPORTANT FIX
+        window.location.href = "/tasks.html";
       } else {
         alert("Invalid credentials");
       }
+    })
+    .catch(err => {
+      console.error("Login error:", err);
+      alert("Login failed");
     });
 }
 
